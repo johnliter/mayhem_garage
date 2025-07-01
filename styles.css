@@ -1,0 +1,64 @@
+/* Custom font styling */
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+h1, h2, h3, h4 {
+    font-family: 'Roboto', sans-serif;
+}
+/* Parallax effect for hero */
+.parallax {
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+/* Fade-in animation */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+/* Mobile menu slide-in */
+#mobile-menu {
+    transition: transform 0.3s ease-in-out;
+    transform: translateX(100%);
+}
+#mobile-menu.open {
+    transform: translateX(0);
+}
+/* Service card hover effect */
+.service-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.service-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+/* Testimonial hover effect */
+.testimonial-card:hover {
+    background-color: #f9fafb;
+}
+/* Testimonial dots */
+.dot {
+    width: 12px;
+    height: 12px;
+    background-color: #d1d5db;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.dot.active {
+    background-color: #1e40af;
+}
+.dot:hover {
+    background-color: #3b82f6;
+}
+/* Form focus states */
+input:focus, select:focus, textarea:focus {
+    box-shadow: 0 0 0 3px rgba(234, 179, 8, 0.3);
+}

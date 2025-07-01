@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mayhem Garage - Expert Automotive Maintenance & Repair</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-50">
+        <!-- Navigation -->
+    <nav class="bg-blue-950 text-white py-4 sticky top-0 z-20 shadow-lg" aria-label="Main Navigation">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <h1 class="text-2xl font-extrabold" aria-label="Mayhem Garage">Mayhem Garage</h1>
+            <div class="space-x-6 hidden md:flex items-center">
+                <a href="#about" class="hover:text-yellow-400 transition smooth-scroll" aria-label="About Us">About</a>
+                <a href="#testimonials" class="hover:text-yellow-400 transition smooth-scroll" aria-label="Testimonials">Testimonials</a>
+                <a href="#contact" class="hover:text-yellow-400 transition smooth-scroll" aria-label="Contact">Contact</a>
+            </div>
+            <button class="md:hidden" onclick="toggleMobileMenu()" aria-label="Toggle Mobile Menu">
+                <i class="fas fa-bars fa-lg"></i>
+            </button>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-blue-900 text-white py-4 absolute w-full" aria-hidden="true">
+            <a href="#about" class="block px-4 py-2 hover:bg-blue-800 smooth-scroll" aria-label="About Us">About</a>
+            <a href="#testimonials" class="block px-4 py-2 hover:bg-blue-800 smooth-scroll" aria-label="Testimonials">Testimonials</a>
+            <a href="#contact" class="block px-4 py-2 hover:bg-blue-800 smooth-scroll" aria-label="Contact">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative parallax h-[600px]" style="background-image: url('https://images.unsplash.com/photo-1517524008697-84c5b05706d2?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80')" loading="lazy">
+        <div class="absolute inset-0 bg-gradient-to-b from-blue-950/70 to-black/80 flex items-center justify-center">
+            <div class="text-center text-white px-4">
+                <h2 class="text-5xl md:text-6xl font-extrabold mb-4">Premier Auto Repair</h2>
+                <p class="text-xl md:text-2xl font-semibold mb-6">Any Make, Any Model (Except German Cars)</p>
+                <p class="text-lg md:text-xl mb-8 max-w-3xl mx-auto">Serving Kempner with reliable repairs for gas, diesel, and small engines. Trust our team with over 20 years of combined experience!</p>
+                <div class="flex flex-col sm:flex-row justify-center gap-4">
+                    <a href="#contact" class="bg-yellow-400 text-black px-10 py-4 rounded-full font-semibold text-lg hover:bg-yellow-500 transition duration-300 shadow-lg hover:shadow-xl" aria-label="Book Appointment">Schedule Your Service</a>
+                    <a href="tel:+1234567890" class="bg-transparent border-2 border-white text-white px-10 py-4 rounded-full font-semibold text-lg hover:bg-white hover:text-blue-950 transition duration-300" aria-label="Call Us">Call Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center text-blue-950 mb-12 fade-in" aria-label="About Mayhem Garage">About Mayhem Garage</h2>
+            <div class="max-w-3xl mx-auto text-center fade-in">
+                <p class="text-lg text-gray-600 mb-6">Established in 2024, Mayhem Garage is Kempner’s trusted auto repair shop. Our team, with a combined total of over 20 years of experience, is dedicated to delivering honest, high-quality service for every vehicle that enters our shop.</p>
+                <p class="text-lg text-gray-600">We specialize in gas, diesel, and small engine repairs, using only premium parts and transparent pricing. From routine maintenance to complex diagnostics, we treat every job with precision and care, ensuring your vehicle runs at its best.</p>
+            </div>
+        </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center text-blue-950 mb-12 fade-in" aria-label="Our Services">Our Services</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-gray-100 p-8 rounded-xl shadow-lg service-card text-center fade-in" style="transition-delay: 0.1s;">
+                    <i class="fas fa-car-battery fa-3x text-blue-950 mb-4"></i>
+                    <h3 class="text-2xl font-semibold text-blue-950 mb-4">Gas Engine Repair</h3>
+                    <p class="text-blue-700 font-bold text-lg">$115/hour</p>
+                    <p class="text-gray-600 mt-4">Comprehensive repairs including oil changes, brake service, transmission work, and engine diagnostics for all gas-powered vehicles.</p>
+                </div>
+                <div class="bg-gray-100 p-8 rounded-xl shadow-lg service-card text-center fade-in" style="transition-delay: 0.2s;">
+                    <i class="fas fa-truck-pickup fa-3x text-blue-950 mb-4"></i>
+                    <h3 class="text-2xl font-semibold text-blue-950 mb-4">Diesel Engine Repair</h3>
+                    <p class="text-blue-700 font-bold text-lg">$125/hour</p>
+                    <p class="text-gray-600 mt-4">Expert diesel services, including fuel system repairs, turbo maintenance, and performance enhancements.</p>
+                </div>
+                <div class="bg-gray-100 p-8 rounded-xl shadow-lg service-card text-center fade-in" style="transition-delay: 0.3s;">
+                    <i class="fas fa-wrench fa-3x text-blue-950 mb-4"></i>
+                    <h3 class="text-2xl font-semibold text-blue-950 mb-4">Small Engine Repair</h3>
+                    <p class="text-blue-700 font-bold text-lg">$75/hour</p>
+                    <p class="text-gray-600 mt-4">Precision repairs for lawnmowers, ATVs, generators, and other small engines, keeping your equipment in top shape.</p>
+                </div>
+            </div>
+            <div class="mt-12 text-center fade-in">
+                <h3 class="text-2xl font-semibold text-blue-950 mb-6">Why Choose Us?</h3>
+                <ul class="text-lg text-gray-600 max-w-2xl mx-auto">
+                    <li class="mb-2"><i class="fas fa-check text-blue-700 mr-2"></i> Transparent pricing with no hidden fees</li>
+                    <li class="mb-2"><i class="fas fa-check text-blue-700 mr-2"></i> High-quality, OEM-equivalent parts</li>
+                    <li class="mb-2"><i class="fas fa-check text-blue-700 mr-2"></i> Same-day appointments often available</li>
+                    <li><i class="fas fa-check text-blue-700 mr-2"></i> Over 20 years of combined team experience</li>
+                </ul>
+                <div class="mt-8 max-w-2xl mx-auto">
+                    <h3 class="text-2xl font-semibold text-blue-950 mb-4">Frequently Asked Questions</h3>
+                    <div class="space-y-4">
+                        <div>
+                            <h4 class="text-lg font-medium text-blue-950">What vehicles do you service?</h4>
+                            <p class="text-gray-600 mt-2">We service all makes and models of gas, diesel, and small engine vehicles and equipment, except German cars (e.g., BMW, Mercedes, Audi).</p>
+                        </div>
+                        <div>
+                            <h4 class="text-lg font-medium text-blue-950">Do you offer warranties?</h4>
+                            <p class="text-gray-600 mt-2">We offer 6-12 month warranties on parts and labor, depending on the manufacturer’s warranty.</p>
+                        </div>
+                        <div>
+                            <h4 class="text-lg font-medium text-blue-950">How do I claim the hero discount?</h4>
+                            <p class="text-gray-600 mt-2">Present a valid ID for military, veteran, first responder, or educator status at the time of service to receive 10% off.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Discount Section -->
+    <section id="discount" class="bg-gradient-to-r from-blue-800 to-blue-600 text-white py-16">
+        <div class="container mx-auto px-4 text-center fade-in">
+            <h2 class="text-4xl font-bold mb-6" aria-label="Community Discount">Community Hero Discount</h2>
+            <p class="text-xl font-medium mb-6">10% OFF for Military, Veterans, First Responders, and Educators</p>
+            <p class="text-lg max-w-2xl mx-auto">We proudly support our community heroes. Present a valid ID at the time of service to claim your discount. Call us for more details!</p>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center text-blue-950 mb-12 fade-in" aria-label="Customer Testimonials">What Our Customers Say</h2>
+            <div class="relative overflow-hidden testimonial-carousel">
+                <div id="testimonial-slider" class="flex transition-transform duration-500 ease-in-out">
+                    <div class="min-w-full bg-white p-8 rounded-xl shadow-md flex items-center testimonial-card fade-in">
+                        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" alt="John D." class="w-16 h-16 rounded-full mr-4" loading="lazy">
+                        <div>
+                            <p class="text-gray-600 italic mb-4">"Mayhem Garage got my truck back on the road fast. Great service and fair prices!"</p>
+                            <p class="text-blue-950 font-semibold">– John D., Kempner, TX</p>
+                        </div>
+                    </div>
+                    <div class="min-w-full bg-white p-8 rounded-xl shadow-md flex items-center testimonial-card fade-in">
+                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" alt="Sarah M." class="w-16 h-16 rounded-full mr-4" loading="lazy">
+                        <div>
+                            <p class="text-gray-600 italic mb-4">"My lawnmower is running better than ever. The team is professional and friendly!"</p>
+                            <p class="text-blue-950 font-semibold">– Sarah M., Copperas Cove, TX</p>
+                        </div>
+                    </div>
+                    <div class="min-w-full bg-white p-8 rounded-xl shadow-md flex items-center testimonial-card fade-in">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" alt="Mike R." class="w-16 h-16 rounded-full mr-4" loading="lazy">
+                        <div>
+                            <p class="text-gray-600 italic mb-4">"Honest and reliable. My go-to for all my vehicle repairs!"</p>
+                            <p class="text-blue-950 font-semibold">– Mike R., Killeen, TX</p>
+                        </div>
+                    </div>
+                    <div class="min-w-full bg-white p-8 rounded-xl shadow-md flex items-center testimonial-card fade-in">
+                        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" alt="Lisa T." class="w-16 h-16 rounded-full mr-4" loading="lazy">
+                        <div>
+                            <p class="text-gray-600 italic mb-4">"Fixed my ATV in a single day. Amazing service and great value!"</p>
+                            <p class="text-blue-950 font-semibold">– Lisa T., Lampasas, TX</p>
+                        </div>
+                    </div>
+                </div>
+                <button onclick="slideTestimonials(-1)" class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-blue-950 text-white p-3 rounded-full hover:bg-blue-800" aria-label="Previous Testimonial"><i class="fas fa-chevron-left"></i></button>
+                <button onclick="slideTestimonials(1)" class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-blue-950 text-white p-3 rounded-full hover:bg-blue-800" aria-label="Next Testimonial"><i class="fas fa-chevron-right"></i></button>
+                <div class="text-center mt-4" role="tablist" aria-live="polite">
+                    <span class="dot active" onclick="goToSlide(0)" role="tab" aria-label="Testimonial 1"></span>
+                    <span class="dot" onclick="goToSlide(1)" role="tab" aria-label="Testimonial 2"></span>
+                    <span class="dot" onclick="goToSlide(2)" role="tab" aria-label="Testimonial 3"></span>
+                    <span class="dot" onclick="goToSlide(3)" role="tab" aria-label="Testimonial 4"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center text-blue-950 mb-12 fade-in" aria-label="Contact Us">Get in Touch</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="fade-in">
+                    <h3 class="text-2xl font-semibold text-blue-950 mb-6">Contact Information</h3>
+                    <p class="text-lg mb-4">Address: <a href="https://maps.google.com/?q=7167+FM+2657,+Kempner,+TX+76539" target="_blank" rel="noopener" class="text-blue-950 hover:text-yellow-400" aria-label="View Map">7167 FM 2657, Kempner, TX 76539</a></p>
+                    <p class="text-lg mb-4">Phone: <a href="tel:+1234567890" class="text-blue-950 hover:text-yellow-400 font-bold text-xl" aria-label="Call Us">(234) 567-890</a></p>
+                    <p class="text-lg mb-4">Hours: Mon-Fri 8:00 AM - 6:00 PM, Sat 9:00 AM - 3:00 PM, Sun Closed</p>
+                    <p class="text-lg mb-4 text-blue-700 font-semibold">Same-day appointments often available!</p>
+                    <div class="flex justify-center space-x-8 mb-8">
+                        <a href="https://facebook.com" target="_blank" rel="noopener" class="text-blue-950 hover:text-yellow-400 transition duration-300 transform hover:scale-110" aria-label="Facebook">
+                            <i class="fab fa-facebook-f fa-2x"></i>
+                        </a>
+                        <a href="https://instagram.com" target="_blank" rel="noopener" class="text-blue-950 hover:text-yellow-400 transition duration-300 transform hover:scale-110" aria-label="Instagram">
+                            <i class="fab fa-instagram fa-2x"></i>
+                        </a>
+                        <a href="https://tiktok.com" target="_blank" rel="noopener" class="text-blue-950 hover:text-yellow-400 transition duration-300 transform hover:scale-110" aria-label="TikTok">
+                            <i class="fab fa-tiktok fa-2x"></i>
+                        </a>
+                    </div>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3400.8737263243743!2d-98.001223684784!3d31.08107198150809!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x865b8b7b0b7b7b7b%3A0x1234567890abcdef!2s7167%20FM2657%2C%20Kempner%2C%20TX%2076539!5e0!3m2!1sen!2sus!4v1634567890123!5m2!1sen!2sus" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" aria-label="Map of Mayhem Garage"></iframe>
+                </div>
+                <div class="max-w-lg mx-auto fade-in">
+                    <h3 class="text-2xl font-semibold text-blue-950 mb-6">Send Us a Message</h3>
+                    <div class="bg-gray-100 p-8 rounded-xl shadow-md">
+                        <form onsubmit="return false;">
+                            <input type="text" placeholder="Your Name" class="w-full p-3 mb-4 border rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-400" aria-label="Name" required>
+                            <input type="email" placeholder="Your Email" class="w-full p-3 mb-4 border rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-400" aria-label="Email" required>
+                            <select class="w-full p-3 mb-4 border rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-400" aria-label="Service Type">
+                                <option value="" disabled selected>Select Service</option>
+                                <option value="gas">Gas Engine Repair</option>
+                                <option value="diesel">Diesel Engine Repair</option>
+                                <option value="small">Small Engine Repair</option>
+                                <option value="other">Other</option>
+                            </select>
+                            <textarea placeholder="Your Message" class="w-full p-3 mb-4 border rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-400" rows="4" aria-label="Message" required></textarea>
+                            <button class="bg-yellow-400 text-black px-6 py-3 rounded-full font-semibold hover:bg-yellow-500 transition duration-300 w-full" disabled aria-label="Send Message">Send Message</button>
+                            <p class="text-sm text-gray-500 mt-2">Contact form submission is disabled. Please call or visit us!</p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue-950 text-white py-10">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Mayhem Garage</h3>
+                    <p>7167 FM 2657, Kempner, TX 76539</p>
+                    <p><a href="tel:+1234567890" class="hover:text-yellow-400">Call: (234) 567-890</a></p>
+                    <p class="mt-2">Your trusted partner for reliable repairs</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Business Hours</h3>
+                    <p>Mon-Fri: 8:00 AM - 6:00 PM</p>
+                    <p>Sat: 9:00 AM - 3:00 PM</p>
+                    <p>Sun: Closed</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Connect With Us</h3>
+                    <div class="flex justify-center space-x-6">
+                        <a href="https://facebook.com" target="_blank" rel="noopener" class="hover:text-yellow-400" aria-label="Facebook"><i class="fab fa-facebook-f fa-2x"></i></a>
+                        <a href="https://instagram.com" target="_blank" rel="noopener" class="hover:text-yellow-400" aria-label="Instagram"><i class="fab fa-instagram fa-2x"></i></a>
+                        <a href="https://tiktok.com" target="_blank" rel="noopener" class="hover:text-yellow-400" aria-label="TikTok"><i class="fab fa-tiktok fa-2x"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-8">
+                <p class="mt-2">© 2025 Mayhem Garage. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
